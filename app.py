@@ -8,4 +8,6 @@ with open('onoff.json', 'r') as fp:
     data = json.load(fp)
 
 
-st.write(data)
+lt = data.values()
+lt = [0 if item == '"off"' else 1 for item in lt]
+st.write(lt)
