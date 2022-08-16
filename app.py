@@ -5,7 +5,7 @@ import json
 
 
 with open('onoff.json', 'r') as fp:
-    data = json.loads(fp)
+    data = json.load(fp)
 
 
 st.write(data)
